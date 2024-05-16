@@ -84,8 +84,8 @@ jobs:
     steps:
       - name: Download do Repositório
         uses: actions/checkout@v4       # https://github.com/actions/checkout
-  
+    
       - name: DAST (ZAP Scan)
-        uses: zaproxy/action-full-scan@v0.10.0    #https://github.com/marketplace/actions/zap-full-scan
-         with:
+        uses: zaproxy/action-full-scan@v0.10.0   #https://github.com/marketplace/actions/zap-full-scan
+        with:
           target: 'https://vitorspricigo-nu2ly27wnq-ue.a.run.app/'
